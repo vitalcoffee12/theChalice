@@ -1,0 +1,10 @@
+//console.log("                     '／'　　j\n                 ／　 /ｰ'        ♥ 힘 의 ♥\n              〈　 ヽ                     ♥ 차 이 ♥\n              　､　　ヽ∧＿∧\n                  〉　   ´･ω･）　　　   ,-､、\n                  / ノ　　 ￣⌒ヽ　　 「　　〉\n                 ﾉ　　' L　　　　 `ヽ.／　 /\n              (　　　　 ∠_　　　ヽ､＿,");
+var lefthand = "                     '／'　j";
+var force = "\n                 ／　 /ｰ'        ♥ 힘 의 ♥";
+var differ = "\n              〈　 ヽ                     ♥ 차 이 ♥";
+var ear = "\n              　､　　ヽ∧＿∧";
+var face = "\n                  〉　   ´･ω･）　　　   ,-､、";
+var righthand = "\n                  / ノ　　 ￣⌒ヽ　　 「　　〉";
+var back = "\n                 ﾉ　　' L　　　　 `ヽ.／　 /";
+var end = "\n                (　　　　 ∠_　　　ヽ､＿,";
+console.log(lefthand+force+differ+ear+face+righthand+back+end);
