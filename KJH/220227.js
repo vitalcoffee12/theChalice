@@ -40,4 +40,8 @@ var 흑당 = "암흑기사";
 var 흑당 = "건브레이커";
 var 흑당 = "전사";
 
-if(흑당){console.log(흑당)}
+if(true){console.log(흑당)}
+
+/** 0이랑 ""은 false 취급
+ * var nodata; 
+ */
