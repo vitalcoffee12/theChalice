@@ -1,15 +1,24 @@
-var math=50;
+var job="사무라이2";
+var level=80;
 
-if(math==100){
-    console.log("A등급입니다.");
-}
-else if(math<100 && math>=80){
-    console.log("B등급입니다.");
-}
-else if(math<80 && math>=60){
-    console.log("C등급입니다.");
-}
-else {
-    console.log("재수강하십쇼.");
-}
 
+
+if(job=="사무라이"){
+    if(level==80){
+        console.log("만랩의 사무라이 입니다.");
+    }
+    else{
+        console.log("만랩이 아닌 사무라이 입니다.");
+    }
+}
+else if(job!="사무라이"){
+    if(level==80){
+        console.log("만랩인 다른직업입니다.");
+    }
+    else{
+        console.log("만랩이 아닌 다른직업입니다.");
+    }
+}
+else{
+    console.log("뭐고 이건...?");
+}
