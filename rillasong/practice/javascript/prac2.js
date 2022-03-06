@@ -19,7 +19,7 @@ var thirdanswer;
 
 //if(a==1){
     rl.on("line",function(line){
-        console.log("you entered",line);
+        //console.log("you entered",line);
 
       
         if(a==0){
