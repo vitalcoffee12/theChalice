@@ -1,4 +1,5 @@
 // if문 스위치로 바꾸고 복합 사용
+
 var invincibletime= "10";
 var getdamage= "X"
 switch(invincibletime){
