@@ -61,20 +61,3 @@ else if (BioblasterGCD <=9 && BioblasterGCD >=2.5){console.log("Cast-Spread Shot
 else {console.log("Cast-Spread Shot")}
 
 
-
-var readline = require("readline");
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
-rl.on("line", function (line) {
-    console.log("you entered", line);
-    if (line === "cloes") {
-        rl.close();
-    }
-}).on("close", function() {
-    console.log("input event closed");
-});
-
