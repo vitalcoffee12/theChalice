@@ -48,3 +48,33 @@ var 렌쟈 = "16길"
 
 if(렌쟈=="16길" || 렌쟈=="백마도사"){console.log("참담한 마음")}
 
+//숙제 기공사의 광역 딜 사이클
+
+var BioblasterGCD = 8
+var HeatGauge = 30
+var FlamethrowerGCD = 7
+
+if(BioblasterGCD < 2.5){console.log("Cast-Bioblaster")}
+else if (BioblasterGCD > 9 && HeatGauge >= 50){console.log("Buff-Overheated and Cast-Auto Crossbow");}
+else if (BioblasterGCD > 9 && HeatGauge < 50 && FlamethrowerGCD < 2.5){console.log("Cast-Flamethrower");}
+else if (BioblasterGCD <=9 && BioblasterGCD >=2.5){console.log("Cast-Spread Shot and Cast-Bioblaster after", BioblasterGCD, "seconds");}
+else {console.log("Cast-Spread Shot")}
+
+
+
+var readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+rl.on("line", function (line) {
+    console.log("you entered", line);
+    if (line === "cloes") {
+        rl.close();
+    }
+}).on("close", function() {
+    console.log("input event closed");
+});
+
