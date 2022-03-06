@@ -45,3 +45,4 @@ else if(invincibletime==10 && getdamage!="X"){
 else {
    console.log("일대일대결");
 }
+

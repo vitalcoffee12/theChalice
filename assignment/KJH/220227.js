@@ -17,3 +17,4 @@ else if(invincibletime==8 && getdamage!="x"){
 }
 else {
   console.log("지속시간이랑 데미지 여부를 다시 확인해 주세요!");
+}
