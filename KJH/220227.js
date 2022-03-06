@@ -22,26 +22,26 @@ if (false) {
   }
 
 
-  var math = 100;
-  if(math==100){
-    console.log("A등급입니다.");
-}
-else if(80<=math && math<100){
-    console.log("B등급입니다.");
-}
-else if(60<=math && math<80){
-    console.log("C등급입니다.");
-}
-else {
-    console.log("재수강하십쇼.");
-}
-
-var 흑당 = "암흑기사";
-var 흑당 = "건브레이커";
-var 흑당 = "전사";
-
-if(true){console.log(흑당)}
-
 /** 0이랑 ""은 false 취급
  * var nodata; 
+ * 
+ * 
  */
+
+//탱커의 무적기 특징에 대하여
+
+ var invincibletime = 10;
+ var getdamage = "x";
+
+ if(invincibletime==10 && getdamage=="X"){
+   console.log("천하무적");
+}
+else if(invincibletime==8 && getdamage=="X"){
+   console.log("폭발유성");
+}
+else if(invincibletime==10 && getdamage!="X"){
+   console.log("산송장");
+}
+else {
+   console.log("일대일대결");
+}
