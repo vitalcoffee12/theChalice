@@ -38,3 +38,19 @@ if (false) {
  else {
      console.log("재수강하십쇼.");
  }
+
+ var readline = require("readline");
+
+ const rl = readline.createInterface({
+   input: process.stdin,
+   output: process.stdout,
+ });
+
+ rl.on("line", function (line) {
+  console .log("i say" , line);
+  if (line === "close") {
+    rl.close();
+  }
+ }).on("close", function () {
+   console.log("input event closed");
+ });
