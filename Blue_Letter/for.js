@@ -1,3 +1,4 @@
+var starttime =0;
 for(var i=20; i>=0; i--)
 {
     if(i==30 || i==25 ||i==20 || i==15)
