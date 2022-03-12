@@ -55,9 +55,12 @@ var HeatGauge = 30
 var FlamethrowerGCD = 7
 
 if(BioblasterGCD < 2.5){console.log("Cast-Bioblaster")}
-else if (BioblasterGCD > 9 && HeatGauge >= 50){console.log("Buff-Overheated and Cast-Auto Crossbow");}
-else if (BioblasterGCD > 9 && HeatGauge < 50 && FlamethrowerGCD < 2.5){console.log("Cast-Flamethrower");}
-else if (BioblasterGCD <=9 && BioblasterGCD >=2.5){console.log("Cast-Spread Shot and Cast-Bioblaster after", BioblasterGCD, "seconds");}
-else {console.log("Cast-Spread Shot")}
 
+else if (BioblasterGCD > 9 && HeatGauge >= 50){console.log("Buff-Overheated and Cast-Auto Crossbow");}
+
+else if (BioblasterGCD > 9 && HeatGauge < 50 && FlamethrowerGCD < 2.5){console.log("Cast-Flamethrower");}
+
+else if (BioblasterGCD <=9 && BioblasterGCD >=2.5){console.log("Cast-Spread Shot and Cast-Bioblaster after", BioblasterGCD, "seconds");}
+
+else {console.log("Cast-Spread Shot");}
 
