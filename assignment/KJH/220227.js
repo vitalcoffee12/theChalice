@@ -1,7 +1,7 @@
 //탱커의 무적기 특징에 대하여 220227
 
-var invincibletime = 101;
-var getdamage = "x";
+var invincibletime = 10;
+var getdamage = "o";
 
 if(invincibletime==10 && getdamage=="x"){
   console.log("천하무적");
