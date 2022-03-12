@@ -22,29 +22,11 @@ switch (renjya) {
 
 }
 
-var i =1 ; i<40; i=i+10
-    console.log("i값 :"+i);
-    switch(true) {
-        case (i<10):
-            console.log(i+"는 10 이하!");
-            break;
-
-        case (i<20):
-            console.log (i+"는 20 이하!");
-            break;
-        case (i<30):
-            console.log (i+"는 30 이하!");
-        default:
-            console.log("default!");
-            break;
-
-    }
-
 //숙제 기공사의 광역 딜 사이클 switch 버전
 
 
 var BioblasterGCD = 13
-var HeatGauge = 30
+var HeatGauge = 70
 var FlamethrowerGCD = 5
 
  console.log("BioblasterGCD :" + BioblasterGCD+",","HeatGauge :" + HeatGauge +",","FlaemthrowerGCD :" + FlamethrowerGCD)
@@ -63,14 +45,3 @@ var FlamethrowerGCD = 5
      default :
      break;               
  }
-
- /*if(BioblasterGCD < 2.5){console.log("Cast-Bioblaster")}
-
-else if (BioblasterGCD > 9 && HeatGauge >= 50){console.log("Buff-Overheated and Cast-Auto Crossbow");}
-
-else if (BioblasterGCD > 9 && HeatGauge < 50 && FlamethrowerGCD < 2.5){console.log("Cast-Flamethrower");}
-
-else if (BioblasterGCD <=9 && BioblasterGCD >=2.5){console.log("Cast-Spread Shot and Cast-Bioblaster after", BioblasterGCD, "seconds");}
-
-else {console.log("Cast-Spread Shot");}
-*/
