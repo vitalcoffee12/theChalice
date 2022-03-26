@@ -3,5 +3,5 @@
 for (var GG = 1; GG <= 9; GG++)
 for (var TT = 1; TT <= 9; TT++){
     console.log( GG, "*", 1*TT, "=", GG*TT)
-    if(1*TT == 9){console.log("-", GG, "단 쿠뽀-")}
+    if(1*TT == 9){console.log("-", GG, "단 쿠뽀 -")}
 }
