@@ -33,7 +33,7 @@ for (var timer=21 ; timer>=0 ; timer --){
  * - for문 딱 두개만
  */
 
-for (var i = 2; i <= 9 ; i++) {
+for (var i = 2 ; i <= 9 ; i++) {
     for (var j = 1 ; j <=9 ; j++){
         console.log(i,"X", j , "=" , i*j)
     }

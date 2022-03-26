@@ -52,3 +52,14 @@ for (timer = 22; timer >= 0; timer--) {
  * - 2단 9단까지 출력되도록 만들기
  * - for문 딱 두개만
  */
+
+// for 문의 사용
+var i = 0;
+for (;;) {
+  console.log(i);
+  i = i + 20;
+
+  if (i < 20) {
+    break;
+  }
+}
