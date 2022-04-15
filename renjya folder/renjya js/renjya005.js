@@ -38,3 +38,5 @@ for (var i = 2 ; i <= 9 ; i++) {
         console.log(i,"X", j , "=" , i*j)
     }
 }
+
+// for문 다른 조건으로 탈출하는 식
