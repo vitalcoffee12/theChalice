@@ -45,7 +45,7 @@ function divide (number1, number2) {
 
 //값, 연산, 값 3개 선언
 var n1 = 1
-var operater = "/" // +, -,*, / 중 1택
+var operater = "*" // +, -,*, / 중 1택
 var n2 = 0
 
 
