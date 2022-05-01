@@ -31,6 +31,10 @@ const partyMember = [];
 const npcList = [];
 const areaList = [];
 
+const pHero = {
+  name: "용사",
+};
+
 const npcShopOwner = {
   npcCode: 1,
   name: "상점 주인",
@@ -107,19 +111,26 @@ const areaShop = {
 
 areaList.push(areaTown, areaShop, areaEastField);
 npcList.push(npcShopOwner, npcEastMagician);
+monsterList.push(mSpider, mSkeleton, mSkeletonKing);
 
 function printPartyMember() {
   console.log("[현재 파티원 상태]");
   partyMember.forEach((mem) => {
     console.log(" ", mem.name, " : ", mem.curHp, "/", mem.maxHp);
   });
-  console.log(" --------------");
+  console.log(" -------------- ");
 }
 function printArea(area) {
-  console.log("[현재 지역 정보] : ", area.name);
-  console.log("  ", area.state);
+  console.log("[현재 지역 정보 : ", area.name, " ]");
+  console.log("  상태");
+  console.log("   ", area.state);
+  console.log("  NPC");
+  area.npcList.forEach((npc) => {
+    console.log("   ", npc.name);
+  });
   console.log("무엇을 할까?");
 }
+
 function getAttack(origin, target) {
   if (origin.curHp <= 0) {
     console.log(origin.name, "은 전투불능 상태이다!");
