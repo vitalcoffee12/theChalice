@@ -1,5 +1,6 @@
 //텍스트 RPG
 
+//터미널 뒤로가기 : cd ..
 
 var i = 1
 
@@ -53,39 +54,37 @@ function getDamage3 (target, active, damage) {
   console.log(target.name + " 은(는)", active.skill2 +" 을(를) 회피했다!");
 };//플레이어, 타이탄산사태 회피
 
+function state () {
+  console.log ("현재", player.name, "hp : ", player.hp)
+  console.log (i + "턴, 행동선택")
+  console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+};// 상태
+
 //  console.log ("현재", player.name, "hp : ", player.hp)
 
 rl.on("line", function (line) { { 
   console.log("you entered", line);
-    if (line === "공격하기" && i%4!=0) {
+    if (line === "공격하기" && i%4!==0) {
         getDamage0(monster,player,200);
         getDamage0(player,monster,20);
-        ++i
-        console.log ("현재", player.name, "hp : ", player.hp)
-        console.log (i + "턴, 행동선택")
-        console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+        ++i;
+        state()
     }
-    else if (line === "회피하기" && i%4!=0) {
+    else if (line === "회피하기" && i%4!==0) {
       getDamage1(player,monster,0);
       ++i
-      console.log ("현재", player.name, "hp : ", player.hp)
-      console.log (i + "턴, 행동선택")
-      console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+      state()
     }
     else if (line === "회피하기" && i%4==0) {
       getDamage3(player,monster,0);
       ++i;
-      console.log ("현재", player.name, "hp : ", player.hp)
-      console.log (i + "턴, 행동선택")
-      console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+      state()
     }
-    else if (line === "회복하기" && i%4!=0) {
+    else if (line === "회복하기" && i%4!==0) {
       console.log("포션을 먹어 hp를 10 회복 하였습니다.");
       player.hp = player.hp + 10
       ++i
-      console.log ("현재", player.name, "hp : ", player.hp)
-      console.log (i + "턴, 행동선택")
-      console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+      state()
     }
     else if (line === "회복하기" && i%4==0) {
       console.log("포션을 마시다가", monster.name + "의", monster.skill2 + "에 의해 낙사하였습니다.")
@@ -100,12 +99,11 @@ rl.on("line", function (line) { {
       i=1;
       player.hp=120
       monster.hp=1600
-      console.log (i + "턴, 행동선택")
-      console.log ("공격하기, 회피하기, 회복하기 중 입력하세요.")
+      state()
     }
     else if (player.hp>0 && monster.hp<=0) {
       console.log ("GAME CLEAR!\n타이탄을 토벌했습니다!")
-      line = "close"
+      rl.close();
     }
     //console.log ("현재", player.name, "hp : ", player.hp)
 
