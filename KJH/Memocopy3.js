@@ -14,5 +14,6 @@ function timeout(ms) {
       console.log(string);
     }
   }
-  
-  sleep(printString, 3000, 5, "aaaa");
+  console.log("아아아아")
+  sleep(printString, 2000, 1, "타오르는별이 들어갔습니다");
+  console.log("아아아아")
