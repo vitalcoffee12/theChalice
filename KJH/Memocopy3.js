@@ -17,3 +17,5 @@ function timeout(ms) {
   console.log("아아아아")
   sleep(printString, 2000, 1, "타오르는별이 들어갔습니다");
   console.log("아아아아")
+
+  console.log(Math.floor(Math.random()*10))
